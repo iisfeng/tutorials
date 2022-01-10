@@ -16,4 +16,5 @@ public class BaseTest {
         String methodName = new Exception().getStackTrace()[1].getMethodName();
         System.out.println(name+"："+methodName);
     }
+
 }

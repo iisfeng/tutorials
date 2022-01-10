@@ -11,6 +11,9 @@
     <modules>
         <module>testing-modules</module>
         <module>jackson-modules</module>
+        <module>easyexcel-modules</module>
+
+        <module>javaee</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

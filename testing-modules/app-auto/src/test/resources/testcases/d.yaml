@@ -1,0 +1,16 @@
+driver: apidriver
+even: online/black/test1/test2
+iphone:
+  - test1: "3"
+  - online: "8768"
+
+blacklist:
+  -
+testcases:
+  - ../resources/testcase/createtoken.yaml
+  # 部门的业务接口
+  - ../resources/testcase/department.yaml
+  # 通讯录业务接口
+  #- ../resources/testcase/concant.yaml
+
+

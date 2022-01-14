@@ -12,6 +12,10 @@ import java.io.File;
 public class FileUtil {
 
 
+    public FileUtil() {
+        System.out.println("D");
+    }
+
     public static void main(String[] args) {
 //        File file = new File();
     }

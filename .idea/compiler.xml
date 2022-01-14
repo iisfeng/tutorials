@@ -7,16 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="app-auto" />
         <module name="easyexcel-modules" />
         <module name="junit5-hamcrest" />
+        <module name="junit5-allure" />
+        <module name="junit5-base" />
+        <module name="app-auto" />
+        <module name="spring-boot-1" />
         <module name="javaee" />
         <module name="jackson-conversions" />
-        <module name="junit5-base" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-boot-modules" target="11" />
       <module name="untitled" target="11" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-1" options="-parameters" />
+      <module name="spring-boot-modules" options="-parameters" />
+    </option>
   </component>
 </project>

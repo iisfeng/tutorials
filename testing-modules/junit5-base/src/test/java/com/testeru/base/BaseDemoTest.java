@@ -1,4 +1,4 @@
-package com.testeru.classes;
+package com.testeru.base;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;

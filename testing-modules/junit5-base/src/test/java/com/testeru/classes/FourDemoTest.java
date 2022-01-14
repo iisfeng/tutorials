@@ -1,5 +1,7 @@
 package com.testeru.classes;
 
+import com.testeru.base.BaseDemoTest;
+import com.testeru.base.MyTag;
 import org.junit.jupiter.api.*;
 
 
@@ -11,7 +13,7 @@ import org.junit.jupiter.api.*;
  * @create: 2022/1/7 4:46 下午
  */
 @DisplayName("junit5 test")
-public class FourDemoTest extends BaseDemoTest{
+public class FourDemoTest extends BaseDemoTest {
     @BeforeAll
     static void beforeAll1(){
         System.out.println("---进入到首页---");
@@ -22,6 +24,8 @@ public class FourDemoTest extends BaseDemoTest{
     }
     @DisplayName("first test")
     @Test
+    @Tag("dev")
+    @Tag("test")
     void test(){
         System.out.println("---点击查看第 1 个商品详情---");
     }
@@ -31,14 +35,18 @@ public class FourDemoTest extends BaseDemoTest{
     void test2(){
         System.out.println("---点击查看第 2 个商品详情---");
     }
+
     @DisplayName("third test")
-    @Disabled
-    @Test
+//    @Test
+//    @Tag("test")
+    @MyTag
     void test3(){
-        System.out.println("---点击查看第 2 个商品详情---");
+        System.out.println("---点击查看第 test3 2 个商品详情---");
     }
+
     @DisplayName("five test")
     @RepeatedTest(value = 3,name = "Custom name {currentRepetition}/{totalRepetitions}")
+    @Tag("test")
     void test5(){
         System.out.println("---点击查看第 6 个商品详情---");
     }

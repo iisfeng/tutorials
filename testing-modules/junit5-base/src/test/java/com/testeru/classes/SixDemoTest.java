@@ -1,5 +1,6 @@
 package com.testeru.classes;
 
+import com.testeru.base.BaseDemoTest;
 import org.junit.jupiter.api.*;
 
 
@@ -12,7 +13,7 @@ import org.junit.jupiter.api.*;
  */
 @DisplayName("junit5 test")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class SixDemoTest extends BaseDemoTest{
+public class SixDemoTest extends BaseDemoTest {
     private static StringBuilder output = new StringBuilder("");
 
     @BeforeAll

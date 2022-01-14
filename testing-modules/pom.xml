@@ -15,6 +15,7 @@
         <module>junit5-hamcrest</module>
         <module>junit5-base</module>
         <module>app-auto</module>
+        <module>junit5-allure</module>
     </modules>
 
 

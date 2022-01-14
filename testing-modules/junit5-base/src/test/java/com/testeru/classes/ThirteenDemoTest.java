@@ -218,19 +218,18 @@ public class ThirteenDemoTest {
 
 
 
-    public static Stream<Arguments> arguments = Stream.of(
-            Arguments.of(null, true), // null strings should be considered blank
-            Arguments.of("", true),
-            Arguments.of("  ", true),
-            Arguments.of("not blank", false)
+    public static Stream<Arguments> selfdata = Stream.of(
+            arguments("22", 20220709, Arrays.asList("自定义搜索", "结果")),
+            arguments("26", 20220719, Arrays.asList("自定义你好", "世界")),
+            arguments("28", 20220722, Arrays.asList("自定义junit5", "test"))
             );
 
     @ParameterizedTest
-    @VariableSource("arguments")
-    void isBlank_ShouldReturnTrueForNullOrBlankStringsVariableSource(
-            String input, boolean expected) {
-        System.out.println("输入：" + input);
-        System.out.println("输出："+ expected);
+    @VariableSource("selfdata")
+    void selfdataTest(String num, int date, List<String> list) {
+        System.out.println("---点击查看第 " + num + " 个商品详情---");
+        System.out.println("下单日期为：" + date + "\n");
+        System.out.println(list);
     }
 
 

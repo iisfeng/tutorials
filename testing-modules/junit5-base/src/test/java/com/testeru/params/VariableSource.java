@@ -13,7 +13,7 @@ public @interface VariableSource {
     /**
      * The names of static variable within the test class or in external classes to use as sources for arguments.
      */
-    String value() default "";;
+    String value() default "";
 }
 
 

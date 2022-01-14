@@ -69,6 +69,9 @@
             <scope>test</scope>
         </dependency>
 
+
+
+
     </dependencies>
 
 
@@ -79,9 +82,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-<!--                    <includes>-->
-<!--                        <include>com/testeru/suites/cases2/*Test.class</include>-->
-<!--                    </includes>-->
+                    <groups>mytag</groups>
+                    <includes>
+                        <include>com/testeru/classes/*</include>
+                    </includes>
 <!--                    <excludes>-->
 <!--                        <exclude>com/testeru/suites/cases2/*Test.class</exclude>-->
 <!--                        <exclude>*Suite*Test</exclude>-->

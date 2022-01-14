@@ -1,5 +1,6 @@
 package com.testeru.classes;
 
+import com.testeru.base.BaseDemoTest;
 import org.junit.jupiter.api.*;
 
 /**
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.*;
  * @Version 1.0
  * @create: 2022/1/7 4:46 下午
  */
-public class ThreeDemoTest extends BaseDemoTest{
+public class ThreeDemoTest extends BaseDemoTest {
     @BeforeAll
     static void beforeAll1(){
         System.out.println("---进入到首页---");

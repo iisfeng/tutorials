@@ -34,7 +34,6 @@ public class VariableArgumentsProvider
 
     @Override
     public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
-        Object testInstance = context.getTestInstance().orElse(null);
         return context.getTestClass()
                 .map(this::getField)
                 .map(this::getValue)
@@ -63,9 +62,7 @@ public class VariableArgumentsProvider
         Object value = null;
         try {
             value = field.get(null);
-            System.out.println("value:"+value);
         } catch (Exception ignored) {
-            System.out.println("value:"+value);
 
         }
 
